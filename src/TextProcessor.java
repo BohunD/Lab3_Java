@@ -25,7 +25,7 @@ public class TextProcessor {
     }
 
     public List<String> sortWordsByVowelsCount(List<String> words) {
-        Collections.sort(words, (word1, word2) -> {
+        words.sort((word1, word2) -> {
             int vowelsCount1 = countVowels(word1);
             int vowelsCount2 = countVowels(word2);
             return Integer.compare(vowelsCount1, vowelsCount2);
